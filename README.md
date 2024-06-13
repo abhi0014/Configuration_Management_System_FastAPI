@@ -89,25 +89,5 @@ Ensure you have the following installed:
     SELECT * FROM <table_name>;
     ```
 
-**IMPORTANT COMMANDS**
- - To check list of our db, we can use `\l`
- - To connecting with our database, we can use `\c <dbname>`
- - To list all tables in our db, we can use `\dt`
 
-### Running the Application
-
-1. **Apply Database Migrations**:
-    </br>
-    Ensure the database is up-to-date with the latest schema:
-    ```bash
-    alembic upgrade head
-    ```
-
-2. **Start the FastAPI Server**:
-    </br>
-    uvicorn app.main:app --reload
-    ```bash
-    uvicorn app.main:app --reload
-    ```
-    The application will be available at http://127.0.0.1:8000.
  
